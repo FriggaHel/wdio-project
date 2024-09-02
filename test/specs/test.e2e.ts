@@ -1,7 +1,7 @@
 import LoginPage from '../pageobjects/login.page'
 import InventoryPage from '../pageobjects/inventory.page'
 
-describe('My Login application', () => {
+describe('Sauce Demo', () => {
     before(async function () {
     });
 
