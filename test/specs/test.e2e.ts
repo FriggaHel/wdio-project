@@ -24,5 +24,12 @@ describe('Sauce Demo', () => {
         await InventoryPage.fourthImage().waitForExist();
         // Capture screenshot
     })
+
+
+    it('should fail login with wrong credentials', async () => {
+        await LoginPage.open();
+        await LoginPage.login('locked_out_user', 'secret_sauce');
+        // Capture screenshot
+    })
 })
 
