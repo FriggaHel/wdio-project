@@ -70,9 +70,8 @@ export const config: Options.Testrunner = {
     //
     capabilities: [{
         // capabilities for local browser web tests
-        browserName: 'chrome', // or "firefox", "microsoftedge", "safari"
+        browserName: 'chrome',
         platformName: 'Windows 10',
-        'wdio:enforceWebDriverClassic': true,
         'sauce:options': {
             screenResolution: '1600x1200',
         },
@@ -125,7 +124,7 @@ export const config: Options.Testrunner = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
+    services: ['sauce'],
     //
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
