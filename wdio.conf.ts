@@ -72,6 +72,7 @@ export const config: Options.Testrunner = {
         // capabilities for local browser web tests
         browserName: 'chrome',
         platformName: 'Windows 10',
+        'wdio:enforceWebDriverClassic': true,
         'sauce:options': {
             screenResolution: '1600x1200',
             public: 'public',
