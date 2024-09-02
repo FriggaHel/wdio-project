@@ -9,4 +9,4 @@ jobs:
         with:
           node-version-file: '.nvmrc'
       - run: npm ci
-      - run: npm run wdio
+      - run: npx @wdio/cli run ./wdio.conf.ts
