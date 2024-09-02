@@ -1,4 +1,4 @@
-import type { Options } from '@wdio/types'
+import type { Options } from '@wdio/types';
 export const config: Options.Testrunner = {
     //
     // ====================
@@ -69,10 +69,8 @@ export const config: Options.Testrunner = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        // capabilities for local browser web tests
         browserName: 'chrome',
         platformName: 'Windows 10',
-        'wdio:enforceWebDriverClassic': true,
         'sauce:options': {
             screenResolution: '1600x1200',
             public: 'public',
