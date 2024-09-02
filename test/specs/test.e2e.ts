@@ -6,8 +6,8 @@ import { Eyes,
     BatchInfo,
  } from '@applitools/eyes-webdriverio';
 
-import LoginPage from '../pageobjects/login.page.js'
-import InventoryPage from '../pageobjects/inventory.page.js'
+import LoginPage from '../pageobjects/login.page.js';
+import InventoryPage from '../pageobjects/inventory.page.js';
 
 describe('Sauce Demo', () => {
     // Credentials
