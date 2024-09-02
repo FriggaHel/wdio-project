@@ -57,14 +57,14 @@ describe('Sauce Demo', () => {
         await LoginPage.login('standard_user', 'secret_sauce');
 
         await InventoryPage.fourthImage().waitForExist();
-        await eyes!.check(Target.window().fully().withName("Inventory page").layout());
+        await eyes!.check(Target.window().fully().withName("Inventory page"));
     })
 
 
     it('should fail login with wrong credentials', async () => {
         await LoginPage.open();
         await LoginPage.login('locked_out_user', 'secret_sauce');
-        // Capture screenshot
+        await eyes!.check(Target.window().fully().withName("Failed Login"));
     })
 })
 
