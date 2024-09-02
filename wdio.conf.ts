@@ -74,6 +74,7 @@ export const config: Options.Testrunner = {
         platformName: 'Windows 10',
         'sauce:options': {
             screenResolution: '1600x1200',
+            public: 'public',
         },
     }],
 
